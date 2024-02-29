@@ -1,0 +1,3 @@
+Suma de dos números enteros
+
+Escriba un programa que lea dos números enteros y escriba el resultado de la suma de esos dos números en pantalla.

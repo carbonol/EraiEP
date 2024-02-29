@@ -1,0 +1,1 @@
+los primeros N números de la serie de Fibonacci

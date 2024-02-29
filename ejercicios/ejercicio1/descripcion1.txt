@@ -1,0 +1,3 @@
+<genai-dt 1 capitalize> de dos números enteros
+
+Escriba un programa que lea dos números enteros y escriba el resultado de la <genai-dt 1 lowercase> de esos dos números en pantalla.

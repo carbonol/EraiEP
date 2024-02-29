@@ -1,0 +1,2 @@
+Chequeo de un número <genai-desc 1>:
+Dado un número entero n, implemente un programa que escriba en pantalla si ese número es <genai-desc 1>.

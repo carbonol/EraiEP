@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\leand\Documents\NetBeansProjects\EraiEP\prueba_codigos_python\e1v1\suma.py", line 3, in <module>
+    print(num1 + num2) * num2
+    ~~~~~~~~~~~~~~~~~~~^~~~~~
+TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'

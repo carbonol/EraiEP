@@ -1,0 +1,3 @@
+Generación de <genai-desc 1>:
+Imprima en pantalla <genai-desc 1>, validando que el valor de N, el cual debe ser leído, es positivo.
+Si N no es positivo, imprima 'ERROR' en pantalla.

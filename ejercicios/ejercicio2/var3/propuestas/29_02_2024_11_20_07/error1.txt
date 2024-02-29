@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\leand\Documents\NetBeansProjects\EraiEP\prueba_codigos_python\e2v3\area_trapecio.py", line 4, in <module>
+    print((base_mayor + base_menor) / 2.0)  * altura
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+TypeError: unsupported operand type(s) for *: 'NoneType' and 'float'

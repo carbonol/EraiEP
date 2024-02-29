@@ -1,0 +1,2 @@
+Área de un <genai-desc 1>:
+Escriba un programa que lea la cantidad de números reales necesarios y realice las operaciones pertinentes para calcular el área de un <genai-desc 1>.

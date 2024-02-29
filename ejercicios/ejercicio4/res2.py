@@ -1,0 +1,19 @@
+# Importación del módulo de funciones generadoras - NO MODIFICAR
+from pydoc import importfile
+idg = importfile('C:/Users/leand/Documents/Python3Projects/PythonInputInstrToFunctConverter/input_data_generators.py')
+sequential_idg_list = []
+for i in range(1): sequential_idg_list.append([0])
+# Fin de la importación del módulo de funciones generadoras - NO MODIFICAR
+n = idg.random_int_from_closed_interval_data_gen(-5, 10)
+if (n <= 0):
+    print('ERROR')
+else:
+    for i in range(2, n + 1, 1):
+        j = 2
+        sw = False
+        while (j <= (n // 2) and sw == False):
+            if (n % j == 0):
+                sw = True
+            j += 1
+        if (sw == False):
+            print(i)

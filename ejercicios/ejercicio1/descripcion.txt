@@ -1,0 +1,2 @@
+<genai-desc 1> de dos números enteros:
+Escriba un programa que lea dos números enteros y muestre en pantalla <genai-desc 2>.

@@ -1,0 +1,2 @@
+<genai-desc 2> de los números enteros <genai-desc 1> introducidos por el usuario:
+Haga un programa que <genai-desc 3> los números enteros <genai-desc 1> de entre los que son ingresados por el usuario hasta que se ingrese el número cero.

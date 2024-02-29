@@ -1,0 +1,7 @@
+Cálculo del máximo común divisor (MCD)
+--------------------------------------
+Encuentre el máximo común divisor (MCD) de dos números mediante el algoritmo de Euclides, así:
+
+Dados dos enteros, a y b (a > b), se divide a por b, y se obtiene el cociente q, y el resto r1. Si r1 es diferente de 0, se divide b por r1, y se obtiene el cociente q2 y el resto r2. Si r2 es distinto de 0, se divide r1 por r2, y se obtienen cocientes y restos sucesivos.
+Este proceso continúa hasta obtener un resto igual a 0.
+El resto anterior a este es el máximo común divisor de los números iniciales.
