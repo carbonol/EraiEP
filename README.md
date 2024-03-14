@@ -32,21 +32,24 @@ Sin embargo, antes de poder utilizar este programa, es necesario tener en cuenta
 1. Se debe haber instalado un intérprete de Python en el sistema operativo en el que se está utilizando este sistema. En este caso, se recomienda el intérprete de Python 3.11.1, pero podría ser posible usar una versión más actualizada. Sin embargo, entre versiones de Python podrían haber diferencias leves o significativas, así que esto debe tenerse en cuenta al momento de desarrollar o usar el sistema para la evaluación automática. 
 2. Este programa no se ha probado en otro sistema operativo diferente al de Windows 10.
 3. Dependiendo del ambiente de desarrollo o de producción que se considere con este programa, se debe verificar cuidadosamente las constantes (parámetros) empleados para el funcionamiento de este sistema. Entre otras constantes, se debe verificar en especial:
-    1. El directorio raíz del proyecto y el directorio en donde están ubicados los ejercicios. 
-	```
-public static final String ROOT_DIR = System.getProperty("user.dir");    
+    1. El directorio raíz del proyecto y el directorio en donde están ubicados los ejercicios.
+    2. El nombre del intérprete de Python que se emplea para su ejecución en una terminal, teniendo en cuenta que en este sistema se realizan llamados al intérprete de Python como un subproceso. Esto puede realizarse en Windows mediante el comando cmd, pero también se puede realizar de forma dinámica durante la ejecución de este sistema, para la evaluación automática de ejercicios. Este aspecto es especialmente importante, teniendo en cuenta que el nombre del intérprete de Python no es necesariamente **python**.
+
+Para verificar el directorio raíz del proyecto y el directorio en donde están ubicados los ejercicios, se puede revisar el siguiente código en EraiEP.java:
+```
+    public static final String ROOT_DIR = System.getProperty("user.dir");    
     public static final String EXERCISES_DIR = ROOT_DIR + "\\" + "ejercicios";
     public static final String EXERCISES_DIR_NAME = "ejercicios";
 ```
-	2. El nombre del intérprete de Python que se emplea para su ejecución en una terminal, teniendo en cuenta que en este sistema se realizan llamados al intérprete de Python como un subproceso. Esto puede realizarse en Windows mediante el comando cmd, pero también se puede realizar de forma dinámica durante la ejecución de este sistema, para la evaluación automática de ejercicios. Este aspecto es especialmente importante, teniendo en cuenta que el nombre del intérprete de Python no es necesariamente **python**.
-	```
+Para verificar el nombre del intérprete de Python, se puede revisar el siguiente código:
+```
     // Nombre de comando para ejecutar el intérprete de Python en Windows (cmd)
     // Nota: Este nombre puede diferir dependiendo de cómo se haya instalado Python en Windows (por ejemplo).
     // Posibles nombres: python, python3, python3.x (siendo x el número menor - minor - de la versión del lenguaje).
     public static final String PYTHON_INTERPRETER_COMMAND_NAME = "python";
     // public static final String PYTHON_INTERPRETER_COMMAND_NAME = "python3";
-	```
-	
+```
+
 Finalmente, como referencia, las respuestas correctas a 11 de los ejercicios de ejemplo se encuentran en el directorio del repositorio llamado **prueba_codigos_python**. Estos archivos pueden ser útiles para probar el funcionamiento del evaluador automático con estos 11 ejercicios que también son mostrados en el archivo **flujo_ejercicios.txt**.
 
 ## Licencia
